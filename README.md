@@ -183,7 +183,7 @@ Pinterest-AI-Recommender/
 ### 1. Clone the Repository
 
 ```powershell
-git clone https://github.com/YOUR_USERNAME/Pinterest-AI-Recommender.git
+git clone https://github.com/imoro0/Pinterest-AI-Recommender.git
 cd Pinterest-AI-Recommender
 ```
 
