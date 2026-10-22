@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Pinspire | Visual Discovery</title>
+    <meta name="description" content="Discover visual inspiration with personalized image recommendations.">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Top Navigation -->
+    <header class="navbar">
+        <a href="#" class="brand" aria-label="Pinspire home">
+            <span class="brand-icon">P</span>
+            <span class="brand-name">Pinspire</span>
+        </a>
+
+        <nav class="main-nav" aria-label="Main navigation">
+            <button class="nav-link active" id="homeBtn" type="button">
+                Home
+            </button>
+            <button class="nav-link" id="exploreBtn" type="button">
+                Explore
+            </button>
+        </nav>
+
+        <!-- Search -->
+        <form class="search-container" id="searchForm" role="search">
+            <span class="search-icon" aria-hidden="true">⌕</span>
+            <input
+                type="search"
+                id="searchInput"
+                placeholder="Search ideas, images and inspiration..."
+                aria-label="Search images"
+            >
+            <button type="submit" id="searchBtn">Search</button>
+        </form>
+
+        <div class="nav-actions">
+            <button class="icon-btn" id="historyBtn" type="button"
+                    aria-label="View recently viewed images" title="Recently viewed">
+                ◷
+            </button>
+            <div class="avatar" title="Guest profile">G</div>
+        </div>
+    </header>
+
+    <!-- Category Navigation -->
+    <section class="category-section">
+        <div class="category-heading">
+            <div>
+                <p class="eyebrow">YOUR VISUAL WORLD</p>
+                <h1>Find your next inspiration.</h1>
+            </div>
+            <p class="category-subtitle">
+                Explore ideas selected for curious minds.
+            </p>
+        </div>
+
+        <nav class="category-list" id="categoryList"
+             aria-label="Image categories">
+            <button class="category-chip active" data-category="All" type="button">
+                For you
+            </button>
+            <button class="category-chip" data-category="Vehicles" type="button">
+                Vehicles
+            </button>
+            <button class="category-chip" data-category="Nature" type="button">
+                Nature
+            </button>
+            <button class="category-chip" data-category="Aesthetic" type="button">
+                Aesthetic
+            </button>
+            <button class="category-chip" data-category="Fashion" type="button">
+                Fashion
+            </button>
+            <button class="category-chip" data-category="Interior" type="button">
+                Interior
+            </button>
+            <button class="category-chip" data-category="Food" type="button">
+                Food
+            </button>
+            <button class="category-chip" data-category="Travel" type="button">
+                Travel
+            </button>
+            <button class="category-chip" data-category="Animals" type="button">
+                Animals
+            </button>
+            <button class="category-chip" data-category="Fitness" type="button">
+                Fitness
+            </button>
+            <button class="category-chip" data-category="Technology" type="button">
+                Technology
+            </button>
+        </nav>
+    </section>
+
+    <!-- Main Feed -->
+    <main class="feed-section">
+        <div class="feed-heading">
+            <div>
+                <h2 id="feedTitle">Ideas for you</h2>
+                <p id="feedSubtitle">Discover something worth saving.</p>
+            </div>
+
+            <span class="result-count" id="resultCount">Loading images...</span>
+        </div>
+
+        <!-- JavaScript will insert image cards here -->
+        <div class="masonry-grid" id="imageGrid">
+            <div class="loading-state">
+                <div class="loader"></div>
+                <p>Preparing your visual world...</p>
+            </div>
+        </div>
+
+        <div class="empty-state" id="emptyState" hidden>
+            <div class="empty-icon">⌕</div>
+            <h3>No images found</h3>
+            <p>Try another search or choose a different category.</p>
+            <button id="resetBtn" type="button">Show all images</button>
+        </div>
+    </main>
+
+    <!-- Image Details Modal -->
+    <dialog class="image-dialog" id="imageDialog">
+        <button class="dialog-close" id="closeDialog" type="button"
+                aria-label="Close image details">×</button>
+
+        <div class="dialog-main">
+            <img id="dialogImage" src="" alt="Selected image">
+
+            <div class="dialog-info">
+                <p class="eyebrow" id="dialogCategory">CATEGORY</p>
+                <h2 id="dialogTitle">Image details</h2>
+                <p id="dialogDescription"></p>
+            </div>
+        </div>
+    </dialog>
+
+    <footer class="site-footer">
+        <p>Pinspire — Discover more through visuals.</p>
+        <p>Powered by visual recommendation technology.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

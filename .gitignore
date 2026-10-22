@@ -1,0 +1,10 @@
+@"
+__pycache__/
+*.pyc
+.venv/
+venv/
+env/
+.ipynb_checkpoints/
+*.db
+Data/
+"@ | Set-Content .gitignore -Encoding ascii
