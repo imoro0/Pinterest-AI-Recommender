@@ -20,22 +20,22 @@ The project combines a web frontend, a FastAPI backend, an SQLite database, and 
 ## Screenshots
 
 ### Home Feed
-![Home Feed](docs/Screenshot/Home.png)
+![Home Feed](docs/Screenshots/Home.png)
 
 ### Category Filter
-![Category Filter](docs/Screenshot/Category.png)
+![Category Filter](docs/Screenshots/Category.png)
 
 ### Search
-![Search](docs/Screenshot/Search.png)
+![Search](docs/Screenshots/Search.png)
 
 ### Image Details
-![Image Details](docs/Screenshot/Clicked.png)
+![Image Details](docs/Screenshots/Clicked.png)
 
 ### Similar Image Recommendations
-![Similar Images](docs/Screenshot/Similar.png)
+![Similar Images](docs/Screenshots/Similar.png)
 
 ### Recently Viewed
-![Recently Viewed](docs/Screenshot/RecentViewed.png)
+![Recently Viewed](docs/Screenshots/RecentViewed.png)
 
 ## Technology Stack
 
